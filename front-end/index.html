@@ -7,15 +7,44 @@
 </head>
     <link rel="stylesheet" href="styles/index/index.css">
     <link rel="stylesheet" href="styles/index/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <body>
-
+    <script src="js/index.js"></script>
     <!-- HEADER HERE -->
     <div class="header">
         <div class="left-section">
-            <div class="logo">LOGO</div>
+            <div class="logo">LOGO  </div>
         </div>
         <div class="middle-section">
-            <input class="search-box" type="text" placeholder="Search">
+            <div class="entire-searchbox">
+                <input class="search-box" type="text" placeholder="Search">
+                
+                <div class="search-extend-box">
+                    <!-- bug here can't resize extends box, if user resize the windows the right part disapear -->
+                    <div class="extend-box-category">Trending &gt&gt</div>
+                    <div class="extend-box-type">
+                        <div>Games</div>
+                        <div>Movies</div>
+                        <div>Books</div>
+                    </div>
+                    <div class="extend-box-category">New Release &gt&gt</div>
+                    <div class="extend-box-type">
+                        <div>Games</div>
+                        <div>Movies</div>
+                        <div>Books</div>
+                    </div>
+                    <div class="extend-box-category">Upcoming &gt&gt</div>
+                    <div class="extend-box-type">
+                        <div>Games</div>
+                        <div>Movies</div>
+                        <div>Books</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- SelectBox -->
             <div class="custom-select">
                 <select class="select-box">
                   <option value="0">Select category:</option>
