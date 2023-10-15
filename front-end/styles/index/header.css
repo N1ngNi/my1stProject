@@ -72,14 +72,23 @@ input:focus + .search-extend-box {
 .extend-box-category{
     text-decoration:underline;
 }
-.extend-box-category:hover{
+.extend-box-category:hover {
     cursor: pointer;
+    color:white;
+    
 }
-.extend-box-type:hover div{
+.extend-box-type div:hover{
     cursor:pointer;
+    color:white;
 }
-
-
+.empty-box{
+    flex:1;
+    
+}
+.extend-box-category-line{
+    display:flex;
+    flex-direction: row;
+}
 /* chosing box */
 .select-box{
     margin-left:-1px;
