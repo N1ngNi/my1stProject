@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My First Website</title>
-</head>
-    <link rel="stylesheet" href="styles/index/index.css">
-    <link rel="stylesheet" href="styles/index/header.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="jqr/jquery.inview.js"></script>
-<body>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="styles/index/pagedemo.css" />
+    <link rel="stylesheet" href="styles/index/header.css" />
+    <link rel="stylesheet" href="styles/index/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="padding-bottom: 1000px">
     <!-- HEADER HERE -->
     <div class="header">
-        <div class="left-section">
-            <div class="logo">LOGO  </div>
-        </div>
-        <div class="middle-section">
-            <div class="entire-searchbox">
-                <input class="search-box" type="text" placeholder="Search">
-                
-                <div class="search-extend-box">
-                    <div class="extend-box-category-line">
-                        <div class="extend-box-category">Trending &gt&gt</div>
-                        <div class="empty-box"></div>
-                    </div>
-                    <!-- bug here can't resize extends box, if user resize the windows the right part disapear -->
-                    
-                    <div class="extend-box-type">
-                        <div>Games</div>
-                        <div>Movies</div>
-                        <div>Books</div>
-                    </div>
-                    <div class="extend-box-category-line">
-                        <div class="extend-box-category">New Release &gt&gt</div>
-                        <div class="empty-box"></div>
-                    </div>
-                    <div class="extend-box-type">
-                        <div>Games</div>
-                        <div>Movies</div>
-                        <div>Books</div>
-                    </div>
-                    <div class="extend-box-category-line">
-                        <div class="extend-box-category">Upcoming &gt&gt</div>
-                        <div class="empty-box"></div>
-                    </div>
-                    <div class="extend-box-type">
-                        <div>Games</div>
-                        <div>Movies</div>
-                        <div>Books</div>
-                    </div>
-                    
-                </div>
+      <div class="left-section">
+        <div class="logo">LOGO</div>
+      </div>
+      <div class="middle-section">
+        <div class="entire-searchbox">
+          <input class="search-box" type="text" placeholder="Search" />
+
+          <div class="search-extend-box">
+            <div class="extend-box-category-line">
+              <div class="extend-box-category">Trending &gt&gt</div>
+              <div class="empty-box"></div>
             </div>
-            <!-- SelectBox -->
-            <div class="custom-select">
-                <select class="select-box">
-                  <option value="0">Select category:</option>
-                  <option value="1">Game</option>
-                  <option value="2">Movie</option>
-                  <option value="3">Book</option>
-                </select>
+            <!-- bug here can't resize extends box, if user resize the windows the right part disapear -->
+
+            <div class="extend-box-type">
+              <div>Games</div>
+              <div>Movies</div>
+              <div>Books</div>
             </div>
+            <div class="extend-box-category-line">
+              <div class="extend-box-category">New Release &gt&gt</div>
+              <div class="empty-box"></div>
+            </div>
+            <div class="extend-box-type">
+              <div>Games</div>
+              <div>Movies</div>
+              <div>Books</div>
+            </div>
+            <div class="extend-box-category-line">
+              <div class="extend-box-category">Upcoming &gt&gt</div>
+              <div class="empty-box"></div>
+            </div>
+            <div class="extend-box-type">
+              <div>Games</div>
+              <div>Movies</div>
+              <div>Books</div>
+            </div>
+          </div>
         </div>
-        <div class="right-section">
-            <button class="login-button">Login</button>
+        <!-- SelectBox -->
+        <div class="custom-select">
+          <select class="select-box">
+            <option value="0">Select category:</option>
+            <option value="1">Game</option>
+            <option value="2">Movie</option>
+            <option value="3">Book</option>
+          </select>
         </div>
+      </div>
+      <div class="right-section">
+        <button class="login-button">Login</button>
+      </div>
     </div>
-</body>
+
+    <!--Body Here-->
+    <section class="parallax">
+      <img src="images/demo-image2.png" class="infront-demo-image" />
+      <img
+        src="images/cat-and-dogs-logo.png"
+        class="topup-demo-image"
+        id="logoimage"
+      />
+      <img src="images/eating-frenzy.png" class="fish-img" id="fishimg" />
+      <h2 class="parallax-text" id="pagenametext">Website name</h2>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
 </html>
